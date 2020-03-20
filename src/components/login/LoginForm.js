@@ -113,7 +113,7 @@ class LoginForm extends Component {
                             <br/>
                             <span style={{color: '#999'}} >New to Netflix?</span>&nbsp;
                             <Link to="/choose-plan" className="sing-up-text">
-                                Sign Up Now
+                                Sign Up Now !
                             </Link>
                         </div>
                     </form>
