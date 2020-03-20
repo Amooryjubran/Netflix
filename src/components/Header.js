@@ -20,10 +20,12 @@ class Header extends Component {
                 <div className="header-content">
                     <Title>See What's Next.</Title>
                     <SubTitle>WATCH ANYWHERE, CANCEL ANYTIME</SubTitle>
-                    <Button className="main-offer-btn" primary >
+                    <Link to="/choose-plan" >
+                    <Button to="/choose-plan" className="main-offer-btn" primary >
                         try it now
                         <Icon className="Icon" icon={ic_keyboard_arrow_right} size={37} />
                     </Button>
+                    </Link>
                 </div>
             </HeaderComponent>
         )

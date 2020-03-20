@@ -3,6 +3,7 @@ import Img from '../images/tab-1-pic.png';
 import styled from 'styled-components';
 import {Button} from './Button';
 import { generateMedia } from 'styled-media-query';
+import { Link } from 'react-router-dom';
 
  function TabContentOne() {
     return (
@@ -14,7 +15,9 @@ import { generateMedia } from 'styled-media-query';
                             If you decide Netflix isn't for you - no problem. No commitment. Cancel online anytime.
                         </span>
                         <br/>
-                        <Button style={{marginTop: '2rem'}} >Try it now</Button>
+                        <Link to="/choose-plan" >
+                          <Button style={{marginTop: '2rem'}} >Try it now</Button>
+                        </Link>
                     </div>
                     <img src={Img} alt=""/>
                     

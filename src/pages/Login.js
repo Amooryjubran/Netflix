@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { generateMedia } from 'styled-media-query';
 import LoginForm from '../components/login/LoginForm';
 import LoginFooter from '../components/login/LoginFooter';
+import { Link } from 'react-router-dom';
 
 
 class Login extends Component {
@@ -11,7 +12,9 @@ class Login extends Component {
         return (
             <div className="main-login-container">
                 <div className="header-top">
-                    <Logo src={logo} alt="logo"/>
+                    <Link to="/" >
+                        <Logo src={logo} alt="logo"/>
+                    </Link>
                     
                 </div>
                 <LoginForm />

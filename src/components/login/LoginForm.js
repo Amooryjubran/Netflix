@@ -106,13 +106,13 @@ class LoginForm extends Component {
                         </Link>
                         <div className="bottom-form">
                             <img src={Fblogo} alt="facebopk"/>
-                            <Link to="/" className="login-fb-text" >
+                            <Link to="/choose-plan" className="login-fb-text" >
                                 Login with Facebook
                             </Link>
                             <br/>
                             <br/>
                             <span style={{color: '#999'}} >New to Netflix?</span>&nbsp;
-                            <Link to="/" className="sing-up-text">
+                            <Link to="/choose-plan" className="sing-up-text">
                                 Sign Up Now
                             </Link>
                         </div>

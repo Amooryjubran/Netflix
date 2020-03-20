@@ -24,6 +24,11 @@ class LoginFooter extends Component {
           Questions?&nbsp;<Link to="/">Call 1-877-742-1335</Link>
         </span>
         <div className="footer-columns">
+        <ul>
+            <li>
+              <Link to="/">FAQ</Link>
+            </li>
+          </ul>
           <ul>
             <li>
               <Link to="/">Gift Card Terms</Link>

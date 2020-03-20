@@ -5,6 +5,7 @@ import ImgTv from '../images/tab-tv.png'
 import ImgTablet from '../images/tab-tablet.png';
 import ImgMacbook from '../images/tab-macbook.png';
 import { generateMedia } from 'styled-media-query';
+import { Link } from 'react-router-dom';
 
 
 
@@ -17,7 +18,9 @@ import { generateMedia } from 'styled-media-query';
                 <span style={{ fontSize: '1.5rem' }}>
             Watch TV shows and movies anytime, anywhere — personalized for you.
           </span>
-                    <Button className="btn">Try it now</Button>
+                  <Link to="/choose-plan" className="btn" >
+                    <Button>Try it now</Button>
+                  </Link>
                 </div>
                 {/*Tab Bottom Contents*/}
               <div className="tab-bottom-content">
