@@ -1,7 +1,7 @@
 Netflix Clone that was built using React Js and :
-  -React Router Dom
-  -Styled Components
-  -React Icons Kit
+  * React Router Dom
+  * Styled Components
+  * React Icons Kit
 
 * LIVE DEMO : https://netflixz.netlify.com/ *
 
