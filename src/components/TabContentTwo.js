@@ -28,15 +28,15 @@ import { Link } from 'react-router-dom';
 
                 <div>
                     <img src={ImgTv} alt="tv" style={{width: '18.75rem'}} />
-                    <h3>Watch on your TV</h3>
+                    <h3>Enjoy on your TV</h3>
                     <p>Smart Tvs, Playstation, xbox, chromecast, Apple TV, Blu-ray players and more.</p>
                 </div>
                  {/*Tablet Image Container*/}
 
                  <div>
                     <img src={ImgTablet} style={{width: '18.75rem', paddingTop: '0.625rem'}} alt="tablet" />
-                    <h3>Watch on your TV</h3>
-                    <p>Smart Tvs, Playstation, xbox, chromecast, Apple TV, Blu-ray players and more.</p>
+                    <h3>Download Anywhere</h3>
+                    <p>Download your shows to watch on the go. Save your data and watch all your favorites offline.</p>
                 </div>
                  {/*Macbook Image Container*/}
 
@@ -44,8 +44,8 @@ import { Link } from 'react-router-dom';
                     <img src={ImgMacbook} 
                     alt="macbook" 
                     style={{width: '18.75rem', paddingTop: '0.625rem', paddingBottom : '0.625'}} />
-                    <h3>Watch on your TV</h3>
-                    <p>Smart Tvs, Playstation, xbox, chromecast, Apple TV, Blu-ray players and more.</p>
+                    <h3>Watch Everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
                 </div>
               </div>
             </div>
