@@ -1,47 +1,51 @@
-import React, {Component} from 'react'
-import styled from 'styled-components';
-import logo from '../svg/logo.svg';
-import CheckmarkLogo from '../images/Checkmark.png'
-import {Link, NavLink} from 'react-router-dom';
-import { Button } from '../components/Button';
-import { FooterChoosePLan } from '../components/chooseplan/FooterChoosePLan';
+import React, { Component } from "react";
+import styled from "styled-components";
+import logo from "../svg/logo.svg";
+import CheckmarkLogo from "../images/Checkmark.png";
+import { Link, NavLink } from "react-router-dom";
+import { Button } from "../components/Button";
+import { FooterChoosePLan } from "../components/chooseplan/FooterChoosePLan";
 
-
-class ChoosePlan extends Component{
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-    render() {
+class ChoosePlan extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  render() {
     return (
-        <MainContainer>
-            {/* header top */}
+      <MainContainer>
+        {/* header top */}
 
-            <div className="header-top">
-                <Link to="/">
-                    <Logo src={logo} alt="logo"/>
-                </Link>
-                <NavLink to="/login" className="btn signIn-btn" >
-                    Sign In
-                </NavLink>
+        <div className="header-top">
+          <Link to="/">
+            <Logo src={logo} alt="logo" />
+          </Link>
+          <NavLink to="/loggedin" className="btn signIn-btn">
+            Sign In
+          </NavLink>
+        </div>
+        {/* The Header Content */}
+        <div className="header-content">
+          <img className="checkmark-logo" src={CheckmarkLogo} alt="checkMark" />
+          <p>
+            Step <strong>1</strong> of <strong>3</strong>
+          </p>
+          <h2>Choose your plan.</h2>
+          <div className="checked-list">
+            <div className="bullet">No commitments, cancel anytime.</div>
+            <div className="bullet">
+              {" "}
+              Everything on Netflix for one low price.
             </div>
-            {/* The Header Content */ }
-            <div className="header-content">
-                <img className="checkmark-logo" src={CheckmarkLogo} alt="checkMark"/>
-                <p>Step <strong>1</strong> of <strong>3</strong></p>
-                <h2>Choose your plan.</h2>
-                <div className="checked-list">
-                    <div className="bullet">No commitments, cancel anytime.</div>
-                    <div className="bullet"> Everything on Netflix for one low price.</div>
-                    <div className="bullet">Unlimited viewing on all your devices.</div>
-                </div>
-                <Button>
-                    See The Plans
-                </Button>
-            </div>
-            <FooterChoosePLan />
-        </MainContainer>
-    )
-    }
+            <div className="bullet">Unlimited viewing on all your devices.</div>
+          </div>
+          <Link to="/">
+            <Button>See The Plans</Button>
+          </Link>
+        </div>
+        <FooterChoosePLan />
+      </MainContainer>
+    );
+  }
 }
 
 export default ChoosePlan;
@@ -135,7 +139,6 @@ const MainContainer = styled.div`
     }
 
 `;
-
 
 // the logo (netflix)
 const Logo = styled.img`
